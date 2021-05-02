@@ -7,9 +7,9 @@ class WeatherService
   def weather_by_city(city)
     weather_data = api.weather_by_city(city)
     if weather_data.nil?
-      puts "there's no weather data for #{city}"
-      return
+      return "there's no weather data for #{city}"
     end
+    
     weather_parser(weather_data).to_json
   end
 

@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.metaweather.com/api//location/search/?query=New%20York
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - d48a15e9d3af125eeb072d077152abef
+      Date:
+      - Sun, 02 May 2021 05:15:11 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '95'
+    body:
+      encoding: UTF-8
+      string: '[{"title":"New York","location_type":"City","woeid":2459115,"latt_long":"40.71455,-74.007118"}]'
+  recorded_at: Sun, 02 May 2021 05:15:11 GMT
+- request:
+    method: get
+    uri: https://www.metaweather.com/api//location/2459115
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language
+      Location:
+      - https://www.metaweather.com/api//location/2459115/
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - text/html; charset=utf-8
+      X-Cloud-Trace-Context:
+      - c3bfafdf00ce5953f4c7923723fb1ef8
+      Date:
+      - Sun, 02 May 2021 05:15:12 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Sun, 02 May 2021 05:15:12 GMT
+- request:
+    method: get
+    uri: https://www.metaweather.com/api//location/2459115/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - acaee083c62b43259738d3cdd339c4cb
+      Date:
+      - Sun, 02 May 2021 05:15:12 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '3562'
+    body:
+      encoding: UTF-8
+      string: '{"consolidated_weather":[{"id":5958364325478400,"weather_state_name":"Light
+        Cloud","weather_state_abbr":"lc","wind_direction_compass":"SW","created":"2021-05-02T03:31:46.061828Z","applicable_date":"2021-05-02","min_temp":9.43,"max_temp":21.42,"the_temp":18.305,"wind_speed":7.322836923754607,"wind_direction":234.0808470126946,"air_pressure":1012.0,"humidity":50,"visibility":14.144583134494551,"predictability":70},{"id":5982690852470784,"weather_state_name":"Light
+        Rain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-05-02T03:31:49.151100Z","applicable_date":"2021-05-03","min_temp":14.835,"max_temp":22.994999999999997,"the_temp":22.205,"wind_speed":7.360185388695354,"wind_direction":215.9457031727364,"air_pressure":1007.5,"humidity":63,"visibility":11.185302831464249,"predictability":75},{"id":5784756378664960,"weather_state_name":"Heavy
+        Rain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-05-02T03:31:52.047712Z","applicable_date":"2021-05-04","min_temp":16.075000000000003,"max_temp":22.799999999999997,"the_temp":20.32,"wind_speed":6.1669496439937435,"wind_direction":202.9099387130797,"air_pressure":1007.0,"humidity":75,"visibility":7.561466038336118,"predictability":77},{"id":5489224879964160,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"WNW","created":"2021-05-02T03:31:55.074206Z","applicable_date":"2021-05-05","min_temp":14.36,"max_temp":22.625,"the_temp":20.134999999999998,"wind_speed":7.9041011109069705,"wind_direction":282.27017899348016,"air_pressure":1009.0,"humidity":66,"visibility":16.228972798854688,"predictability":73},{"id":6503150459551744,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"NNW","created":"2021-05-02T03:31:58.044967Z","applicable_date":"2021-05-06","min_temp":11.3,"max_temp":18.505000000000003,"the_temp":17.59,"wind_speed":6.445049312017815,"wind_direction":334.0,"air_pressure":1007.0,"humidity":66,"visibility":9.999726596675416,"predictability":73},{"id":5808462584872960,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"NNE","created":"2021-05-02T03:32:01.439957Z","applicable_date":"2021-05-07","min_temp":8.925,"max_temp":14.280000000000001,"the_temp":14.61,"wind_speed":7.299984490575042,"wind_direction":27.500000000000007,"air_pressure":1018.0,"humidity":56,"visibility":7.7764604708502345,"predictability":73}],"time":"2021-05-02T01:15:12.722986-04:00","sun_rise":"2021-05-02T05:53:02.784986-04:00","sun_set":"2021-05-02T19:53:33.133855-04:00","timezone_name":"LMT","parent":{"title":"New
+        York","location_type":"Region / State / Province","woeid":2347591,"latt_long":"42.855350,-76.501671"},"sources":[{"title":"BBC","slug":"bbc","url":"http://www.bbc.co.uk/weather/","crawl_rate":360},{"title":"Forecast.io","slug":"forecast-io","url":"http://forecast.io/","crawl_rate":480},{"title":"HAMweather","slug":"hamweather","url":"http://www.hamweather.com/","crawl_rate":360},{"title":"Met
+        Office","slug":"met-office","url":"http://www.metoffice.gov.uk/","crawl_rate":180},{"title":"OpenWeatherMap","slug":"openweathermap","url":"http://openweathermap.org/","crawl_rate":360},{"title":"Weather
+        Underground","slug":"wunderground","url":"https://www.wunderground.com/?apiref=fc30dc3cd224e19b","crawl_rate":720},{"title":"World
+        Weather Online","slug":"world-weather-online","url":"http://www.worldweatheronline.com/","crawl_rate":360}],"title":"New
+        York","location_type":"City","woeid":2459115,"latt_long":"40.71455,-74.007118","timezone":"US/Eastern"}'
+  recorded_at: Sun, 02 May 2021 05:15:12 GMT
+recorded_with: VCR 6.0.0

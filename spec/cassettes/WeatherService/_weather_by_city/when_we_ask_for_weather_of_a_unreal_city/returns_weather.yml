@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.metaweather.com/api//location/search/?query=Lala%20land
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Language:
+      - en
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=2592000; includeSubDomains
+      Vary:
+      - Accept-Language, Cookie
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Type:
+      - application/json
+      X-Cloud-Trace-Context:
+      - 10f154e02fb6385cca14bc31b54ec6ad
+      Date:
+      - Sun, 02 May 2021 05:15:13 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '2'
+    body:
+      encoding: UTF-8
+      string: "[]"
+  recorded_at: Sun, 02 May 2021 05:15:13 GMT
+recorded_with: VCR 6.0.0

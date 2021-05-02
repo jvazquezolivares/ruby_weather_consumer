@@ -8,7 +8,11 @@ class WeatherApiCalls
 
   #Handle requests of weather by city
   def weather_by_city(city)
-    woeid = woeid_by_city(city).find{ |c| c['title'].eql?(city) }['woeid']
+    woeid = woeid_by_city(city)
+    if woeid.nil? || woeid.empty?
+      return nil
+    end
+    woeid = woeid.find{ |c| c['title']&.eql?(city) }['woeid']
     final_url = "#{BASE_URL}/location/#{woeid}"
     rest_client(:get, final_url).parsed_response
   end
