@@ -4,7 +4,10 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "vcr"
-gem "webmock"
-gem "rspec"
 gem "httparty"
+
+group :test do
+  gem "vcr"
+  gem "webmock"
+  gem "rspec"
+end

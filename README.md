@@ -1,8 +1,18 @@
 # Technical assignment for Contitech
 
 This application receive and parse data coming from [MetaWeather](https://www.metaweather.com/api/) service.
-
 ## Usage
+- This project uses [Httparty](https://github.com/jnunemaker/httparty) gem for http requests
+- It uses rspec for testing
+- It uses vcr gem for http mocking tests
+
+Use the normal way to install the gems of the project
+
+```shell
+bundle install
+```
+Once you have the gems installed, now, you will be able to use the script.
+
 This is a simple ruby script to handle weather data. Executes the script in a normal way
 using your favorite terminal. 
 
@@ -62,6 +72,12 @@ Example:
     }
   ]
 }
+```
+## Test
+You could run the tests using the next command
+
+```shell
+rspec spec/weather_service_spec.rb
 ```
 
 ## Architecture

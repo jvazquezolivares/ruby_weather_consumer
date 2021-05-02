@@ -1,7 +1,7 @@
 require 'spec_helper'
 require "./weather_service"
 
-RSpec.describe WeatherService, vcr: {record: :none, match_requests_on: [:method, :path]} do
+RSpec.describe WeatherService, vcr: {record: :once, match_requests_on: [:method, :path]} do
 
   describe "#weather_by_city" do
     context "when we ask for weather of a real city" do
